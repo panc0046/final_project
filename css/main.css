@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Ledger&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Varela&display=swap");
 .navbar {
   background-color: #283044;
 }
 .navbar a {
   color: #EBF5EE;
   font-size: 18px;
+  border: 1px solid #283044;
 }
 .navbar a:hover {
   border-bottom: 1px solid #EBF5EE;
@@ -16,16 +18,16 @@
 header {
   height: 40vh;
   background-color: #e9ecef;
+  font-family: Varela, Verdana, sans-serif;
 }
 header .header-image {
   border-radius: 50%;
   height: 20vh;
-  position: absolute;
-  left: 0;
-  top: 20vh;
-  margin-left: auto;
-  margin-right: auto;
-  vertical-align: baseline;
+}
+header p {
+  font-size: 22px;
+  padding-top: 1rem;
+  color: #283044;
 }
 
 /*# sourceMappingURL=header.css.map */

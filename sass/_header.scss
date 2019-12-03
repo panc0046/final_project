@@ -3,6 +3,7 @@
     a {
         color: $primary-text-color;
         font-size: $font-size;
+        border: 1px solid $navColor;
         &:hover {
             border-bottom: 1px solid $primary-text-color;
         }
@@ -15,17 +16,15 @@
 header {
     height: 40vh;
     background-color: $light-grey;
+    font-family: $header-font;
     .header-image{
         border-radius: 50%;
         height: 20vh;
-        // display: block;
-        position: absolute;
-        left: 0;
-        top: 20vh;
-        // text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        vertical-align: baseline;
+    }
+    p {
+        font-size: 22px;
+        padding-top: 1rem;
+        color: $navColor;
     }
 }
 /*# sourceMappingURL=header.css.map */
