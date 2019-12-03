@@ -1,0 +1,31 @@
+.navbar {
+    background-color: $navColor;
+    a {
+        color: $primary-text-color;
+        font-size: $font-size;
+        &:hover {
+            border-bottom: 1px solid $primary-text-color;
+        }
+    }
+    .navbar-toggler {
+        background-color: $primary-text-color;
+    }
+}
+
+header {
+    height: 40vh;
+    background-color: $light-grey;
+    .header-image{
+        border-radius: 50%;
+        height: 20vh;
+        // display: block;
+        position: absolute;
+        left: 0;
+        top: 20vh;
+        // text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: baseline;
+    }
+}
+/*# sourceMappingURL=header.css.map */

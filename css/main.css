@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Ledger&display=swap");
+.navbar {
+  background-color: #283044;
+}
+.navbar a {
+  color: #EBF5EE;
+  font-size: 18px;
+}
+.navbar a:hover {
+  border-bottom: 1px solid #EBF5EE;
+}
+.navbar .navbar-toggler {
+  background-color: #EBF5EE;
+}
+
+header {
+  height: 40vh;
+  background-color: #e9ecef;
+}
+header .header-image {
+  border-radius: 50%;
+  height: 20vh;
+  position: absolute;
+  left: 0;
+  top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: baseline;
+}
+
+/*# sourceMappingURL=header.css.map */
+
+/*# sourceMappingURL=main.css.map */
