@@ -1,0 +1,23 @@
+.container {
+    width: 80vw;
+    div{
+        div{
+            min-height: 40vh;
+            @media screen and (min-width: 768px) {
+                min-height: 20vh;
+            }
+            .card {
+                background-color: #183D48;
+                color: #E5D0CC;
+                h5 {
+                    color: #f16529;
+                }
+                img {
+                    height: 137px;
+                    width: 137px;
+                }
+            }
+        }
+    }
+   
+}
