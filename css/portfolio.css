@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Ledger&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Varela&display=swap");
+.main {
+  min-height: 56vh;
+}
+.main .container {
+  max-width: 80vw;
+  background-color: #e9ecef;
+}
+@media screen and (max-width: 576px) {
+  .main .container {
+    max-width: 100vw;
+  }
+}
+.main .container .row div .card {
+  height: 472px;
+}
+.main .container .row div .card img {
+  height: 180px;
+  width: 100%;
+}
+.main .container .row div .card .card-body p {
+  height: 130px;
+}
+
+/*# sourceMappingURL=portfolio.css.map */

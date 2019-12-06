@@ -1,0 +1,28 @@
+@import "./variable";
+
+.main {
+    min-height: 56vh;
+    .container {
+        max-width: 80vw;
+        background-color: $light-grey;
+        @media screen and (max-width: 576px) {
+            max-width: 100vw;
+        }
+        .row {
+            div {
+                .card {
+                    height: 472px;
+                    img {
+                        height: 180px;
+                        width: 100%;
+                    }
+                    .card-body {
+                        p {
+                            height: 130px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

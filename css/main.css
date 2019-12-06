@@ -17,7 +17,7 @@
 
 header {
   height: 40vh;
-  background-color: #e9ecef;
+  background-color: #253C78;
   font-family: Varela, Verdana, sans-serif;
 }
 header .header-image {
@@ -27,31 +27,47 @@ header .header-image {
 header p {
   font-size: 22px;
   padding-top: 4rem;
-  color: #283044;
+  margin-bottom: 0.5rem;
+  color: #EBF5EE;
+}
+@media (max-width: 576px) {
+  header p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 575px) and (max-width: 768px) {
+  header p {
+    font-size: 25px !important;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  header p {
+    font-size: 28px;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */
-.container {
-  width: 80vw;
+footer {
+  background-color: #7CA5B8;
+  text-align: center;
+  bottom: 0;
 }
-.container div div {
-  min-height: 40vh;
+footer ul {
+  margin: 0;
 }
-@media screen and (min-width: 768px) {
-  .container div div {
-    min-height: 20vh;
-  }
+footer li {
+  display: inline;
+  padding-left: 10px;
 }
-.container div div .card {
-  background-color: #183D48;
-  color: #E5D0CC;
+footer .fa {
+  font-size: 1.3rem;
+  color: #EBF5EE;
+  padding-left: 3px;
+  padding-right: 3px;
 }
-.container div div .card h5 {
-  color: #f16529;
-}
-.container div div .card img {
-  height: 137px;
-  width: 137px;
+footer .fa:hover {
+  color: black;
+  transition: color 0.3s ease-in;
 }
 
 /*# sourceMappingURL=main.css.map */

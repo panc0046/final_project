@@ -5,35 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/content.css" />
 </head>
 <body>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-md">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link mx-5" href="./index.html">Home</a>
-              <a class="nav-item nav-link mx-5" href="./portfolio.html">Portfolio</a>
-              <a class="nav-item nav-link active mx-5" href="./contact.html">Contact</a>
-            </div>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand" href="#"><i class="fa fa-cocktail bg-light"></i></a>
+        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active mx-2" href="./index.html">Home</a>
+            <a class="nav-item nav-link mx-2" href="./portfolio.html">Portfolio</a>
+            <a class="nav-item nav-link mx-2" href="./contact.html">Contact</a>
           </div>
+        </div>
       </nav>
 
       <!-- Header -->
       <header>
-          <p class="text-center font-weight-bold">Contact</p>
-          <div class="align-self-center">
-              <img src="./images/avatar.png" class="img-fluid header-image mx-auto d-block" alt="avatar image">
-          </div>
+        <p class="text-center font-weight-bold">Contact For Hiring</p>
+        <div class="align-self-center">
+            <img src="./images/myAvatar.png" class="img-fluid header-image mx-auto d-block" alt="avatar image">
+        </div>
       </header>
+
+      <!-- Content -->
+      <div class="main p-4">
+          <div class="container">
+              <form>
+                  <fieldset>
+                    <legend class="pb-2">Personal Information</legend>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="inputFirstName">First name</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="inputLastName">Last name</label>
+                          <input type="text" class="form-control" id="inputLastName">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputEmail">Email</label>
+                          <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputPhone">Contact number</label>
+                            <input type="ph" class="form-control" id="inputPhone">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="inputCompany">Company name</label>
+                            <input type="text" class="form-control" id="inputCompany">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputSkype">Skype Id</label>
+                            <input type="text" class="form-control" id="inputSkype">
+                        </div>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <legend class="pb-2">Work Information</legend>
+                    <div class="form-row">
+                        <div class='form-group col-md-6'>
+                            <label for="inputPhone">Start Date & Time</label>
+                            <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+                                <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='form-group col-md-6'>
+                            <label for="inputPhone">End Date & Time</label>
+                            <div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+                                <div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                        <div class="col-md-12">
+                            <label for="exampleFormControlTextarea1">Describe your work</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      </div>
+                  </fieldset>
+                  <div class="text-center py-3">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+          </div>      
+      </div>
+      
+       <!-- Footer -->
+       <footer>
+          <ul class="pb-2 pt-2 mt-3">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.github.com/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+    </footer>
 </body>
 </html>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

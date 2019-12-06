@@ -15,7 +15,7 @@
 
 header {
     height: 40vh;
-    background-color: $light-grey;
+    background-color: $header-bgcolor;
     font-family: $header-font;
     .header-image{
         border-radius: 50%;
@@ -24,7 +24,20 @@ header {
     p {
         font-size: 22px;
         padding-top: 4rem;
-        color: $navColor;
+        margin-bottom: 0.5rem;
+        color: $primary-text-color;
+        @media (max-width: 576px) {
+            font-size: $font-size;
+        }
+        @media (min-width: 575px) and (max-width: 768px) {
+            font-size: 25px !important;
+            // padding-bottom: 1rem !important;
+        }
+        @media (min-width: 767px) and (max-width: 1024px) {
+            font-size: 28px;
+            // padding-bottom: 1rem;
+        }
     }
+
 }
 /*# sourceMappingURL=header.css.map */

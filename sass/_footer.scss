@@ -1,3 +1,22 @@
 footer {
-    background-color: #7CA5B8;
+    background-color: $footer-bgcolor;
+    text-align: center;
+    bottom: 0;
+    ul {
+        margin: 0;
+    }
+    li {
+        display: inline;
+        padding-left: 10px;
+    }
+    .fa {
+        font-size: 1.3rem;
+        color: $primary-text-color;
+        padding-left: 3px;
+        padding-right: 3px;
+        &:hover {
+            color: darken($navColor, 25%);
+            transition: color 0.3s ease-in;
+        }
+    }
 }
