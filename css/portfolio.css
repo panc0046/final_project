@@ -22,5 +22,9 @@
 .main .container .row div .card .card-body p {
   height: 130px;
 }
+.main .container .row div .card .card-body .button-bg {
+  background-color: #38369A;
+  color: #eeedf3;
+}
 
 /*# sourceMappingURL=portfolio.css.map */
