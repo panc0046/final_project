@@ -3,10 +3,10 @@
 
 // navbar
 $primary-text: Ledger, 'Times New Roman', Times, serif; 
-//$navColor: #283044;
 $navColor: #283044;
 $primary-text-color: #EBF5EE;
 $font-size: 18px;
+$button-bg: #38369A;
 
 // header
 $light-grey: #e9ecef;
@@ -18,3 +18,8 @@ $content-bgcolor: #BFA89E;
 
 //footer
 $footer-bgcolor: #7CA5B8;
+
+@mixin button-bg {
+    background-color: $button-bg;
+    color: rgb(238, 237, 243);
+}
